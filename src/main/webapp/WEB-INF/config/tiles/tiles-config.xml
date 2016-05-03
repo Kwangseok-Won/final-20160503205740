@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+	<definition name="default" template="/WEB-INF/pages/layout/default_layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/pages/layout/ui-94.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/pages/layout/maincont.jsp"/>
+		<put-attribute name="footer" value="/WEB-INF/pages/layout/ui-291.jsp"/>
+	</definition>
+	
+	<definition name="tiles" extends="default">
+		<put-attribute name="footer" value="Footer Test"/>
+	</definition>
+	
+	<definition name="profile" extends="default">
+		<put-attribute name="body" value="/WEB-INF/pages/layout/profile.jsp"/>
+	</definition>
+	
+</tiles-definitions>
